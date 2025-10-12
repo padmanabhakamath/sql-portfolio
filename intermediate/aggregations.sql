@@ -6,3 +6,13 @@ SELECT SupplierID, SUM(TransactionAmount) AS TotalTransactionAmount
  GROUP BY SupplierID
  HAVING SUM(TransactionAmount) > 0 -- HAVING is like a WHERE for aggregated data
  ORDER BY TotalTransactionAmount DESC;
+
+ -- Calculate Quantity for each Package Type from the InvoiceLines table
+    -- Also output the PackageTypeName from the Warehouse.PackageTypes table
+SELECT pt.PackageTypeName,il.PackageTypeId, SUM(il.Quantity) AS TotalQuantity
+ from [WideWorldImporters].[Sales].[InvoiceLines] AS il
+ JOIN  [WideWorldImporters].[Warehouse].[PackageTypes] AS pt
+    ON pt.PackageTypeId = il.PackageTypeId
+ GROUP BY pt.PackageTypeName, il.PackageTypeId
+
+ 

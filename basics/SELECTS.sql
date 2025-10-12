@@ -10,3 +10,4 @@ SELECT DISTINCT [StockItemID]
 -- SQL Server does not support LIMIT, but you can use TOP with DISTINCT
 SELECT DISTINCT TOP (10) [InvoiceId],[StockItemID]
     FROM [WideWorldImporters].[Sales].[InvoiceLines]
+

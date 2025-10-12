@@ -1,5 +1,5 @@
 -- simplest where clause
--- select all people WITH not null hASHEDPASSWORD
+-- select all people WITH not null HASHEDPASSWORD
 SELECT *
   FROM [WideWorldImporters].[Application].[People]
   where HashedPassword is not null

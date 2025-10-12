@@ -6,7 +6,9 @@ It includes structured examples, case studies, and problem-solving exercises.
 The database used (if not explicitly specified) is the WorldWideImporters database freely available for download from Microsoft [here](https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-oltp-install-configure?view=sql-server-ver17). 
 
 ## 📂 Structure
-- **basics/** → Foundational queries (SELECT, WHERE, ORDER BY, etc.)
+- **basics/** → Foundational queries (SELECT, WHERE, ORDER BY, etc.). Also includes mnemonic ! 
+- **intermediate/** → Aggregations.
+
 
 ## 🚀 How to Use
 1. Clone this repo  
