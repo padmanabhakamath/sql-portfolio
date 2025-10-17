@@ -15,4 +15,9 @@ SELECT pt.PackageTypeName,il.PackageTypeId, SUM(il.Quantity) AS TotalQuantity
     ON pt.PackageTypeId = il.PackageTypeId
  GROUP BY pt.PackageTypeName, il.PackageTypeId
 
- 
+ -- From supplier transactions, get the count of all transactions for every supplierId
+ -- Additional condition - The transaction amount must be greater than 850
+ SELECT Count(*) as transactionCountGreaterThan850, sc.SupplierId
+  FROM [WideWorldImporters].[Purchasing].[SupplierTransactions] AS sc
+  Where sc.TransactionAmount > 850.00
+  GROUP BY sc.SupplierId

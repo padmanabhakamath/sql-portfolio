@@ -5,4 +5,8 @@ GROUP BY
 HAVING
 ORDER BY
 
-Mnemo
+->> Sly Friend Would Give Him Orders
+
+FROM → ON → JOIN → WHERE → GROUP → HAVING → SELECT → WINDOW → DISTINCT → ORDER/LIMIT
+
+-->> From Open Jobs We Get Hit Simply With Doomed Listings
