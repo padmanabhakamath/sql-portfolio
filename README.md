@@ -8,7 +8,7 @@ The database used (if not explicitly specified) is the WorldWideImporters databa
 ## 📂 Structure
 - **basics/** → Foundational queries (SELECT, WHERE, ORDER BY, etc.). Also includes mnemonic ! 
 - **intermediate/** → Aggregations.
-- **advanced/** → Window functions
+- **advanced/** → Window functions (STRING_AGG)
 
 ## 🚀 How to Use
 1. Clone this repo  
